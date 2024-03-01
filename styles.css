@@ -1,0 +1,140 @@
+/* Reset Styles */
+* {
+    margin: 0; /* Reset margin */
+    padding: 0; /* Reset padding */
+    box-sizing: border-box; /* Include padding and border in element's total width and height */
+  }
+  
+  /* Global Styles */
+  body {
+    font-family: Arial, sans-serif; /* Set default font family for the body */
+    background-image: url('images/background-image.jpg'); /* Set background image for the body */
+    background-size: cover; /* Cover the entire viewport with the background image */
+    background-position: center; /* Center the background image */
+  }
+  
+  .container {
+    max-width: 1200px; /* Limit the maximum width of the container */
+    margin: 0 auto; /* Center the container horizontally */
+    padding: 0 20px; /* Add horizontal padding to the container */
+  }
+  
+  /* Header Section Styles */
+  .header {
+    background-color: rgba(0, 0, 0, 0.5); /* Add a semi-transparent black overlay to the header section */
+    color: #fff; /* Set text color for the header section */
+    padding: 20px 0; /* Add padding to the header section */
+  }
+  
+  .logo {
+    color: #fff; /* Set text color for the logo */
+    font-size: 1.5rem; /* Set font size for the logo */
+    text-decoration: none; /* Remove underline from the logo */
+  }
+  
+  .hamburger {
+    display: none; /* Hide hamburger menu by default */
+    cursor: pointer; /* Set cursor to pointer for better usability */
+    z-index: 1000; /* Ensure it's above other content */
+  }
+  
+  .line {
+    width: 30px; /* Set width of each line in the hamburger menu */
+    height: 3px; /* Set height of each line in the hamburger menu */
+    background-color: #fff; /* Set color for each line in the hamburger menu */
+    margin: 5px; /* Set margin between lines in the hamburger menu */
+    transition: transform 0.3s ease; /* Add smooth transition effect for transformation */
+  }
+  
+  /* Navigation Menu Styles */
+  .navbar {
+    display: flex; /* Use flexbox for navigation menu */
+    align-items: center; /* Align items vertically in navigation menu */
+  }
+  
+  .nav-menu {
+    list-style: none; /* Remove default list styles from navigation menu */
+    margin-left: auto; /* Move navigation menu items to the right */
+    display: flex; /* Use flexbox for navigation menu items */
+  }
+  
+  .nav-menu li {
+    margin-left: 20px; /* Add left margin between navigation menu items */
+  }
+  
+  .nav-menu li:first-child {
+    margin-left: 0; /* Remove left margin from the first navigation menu item */
+  }
+  
+  .nav-menu li a {
+    color: #fff; /* Set text color for navigation menu items */
+    text-decoration: none; /* Remove underline from navigation menu items */
+    transition: color 0.3s ease; /* Add smooth transition effect for text color */
+  }
+  
+  .nav-menu li a:hover {
+    color: #FF4500; /* Change text color on hover */
+  }
+  
+  /* Hero Section Styles */
+  .hero {
+    background-color: rgba(0, 0, 0, 0.5); /* Add a semi-transparent black overlay to the hero section */
+    color: #fff; /* Set text color for the hero section */
+    text-align: center; /* Center-align text in the hero section */
+    padding: 100px 0; /* Add padding to the hero section */
+  }
+  
+  .hero h1 {
+    font-size: 3rem; /* Set font size for main headline in the hero section */
+    margin-bottom: 20px; /* Add bottom margin to main headline in the hero section */
+  }
+  
+  .hero p {
+    font-size: 1.2rem; /* Set font size for subheadline in the hero section */
+    margin-bottom: 30px; /* Add bottom margin to subheadline in the hero section */
+  }
+  
+  .btn {
+    display: inline-block; /* Make button display as inline-block */
+    background-color: #FF4500; /* Set background color for button */
+    color: #fff; /* Set text color for button */
+    font-size: 1.2rem; /* Set font size for button */
+    padding: 10px 20px; /* Add padding to button */
+    text-decoration: none; /* Remove underline from button */
+    border-radius: 5px; /* Add border radius to button */
+    transition: background-color 0.3s ease; /* Add smooth transition effect for background color */
+  }
+  
+  .btn:hover {
+    background-color: #FF6347; /* Change background color on hover */
+  }
+  
+  /* Responsive Styles */
+  @media screen and (max-width: 768px) {
+    .nav-menu {
+      display: none; /* Hide regular menu on small screens */
+      flex-direction: column; /* Arrange menu items vertically */
+      background-color: #333; /* Background color for mobile menu */
+      position: absolute; /* Position menu absolutely */
+      top: 80px; /* Distance from top */
+      left: 0;
+      right: 0;
+    }
+  
+    .nav-menu.active {
+      display: flex; /* Show menu when active */
+    }
+  
+    .nav-menu li {
+      margin-left: 0; /* Remove margin between menu items */
+      text-align: center; /* Center-align menu items */
+    }
+  
+    .hamburger {
+      display: block; /* Show hamburger menu on small screens */
+      position: absolute; /* Position hamburger menu absolutely */
+      top: 20px; /* Adjust vertical position */
+      right: 20px; /* Adjust horizontal position */
+    }
+  }
+  
